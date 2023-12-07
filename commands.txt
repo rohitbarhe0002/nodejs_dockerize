@@ -1,0 +1,14 @@
+Create image => docker build -t basic-app .
+ Run container with out changes => docker run --name basic-container3 -p 8080:5000 --rm basic-app
+ create container => docker run --name basic-container -p 5000:5000 --rm -v /Users/developer/Desktop/basic-app:/app basic-app 
+
+For version manage gives version => docker build -t basic-app:v2 .
+For same version run container => docker run --name basic-app-container-v2 -p 5000:5000 basic-app:v2
+
+///format for run compose up
+services:
+  img:
+    build: .
+    container_name: basic-container
+    ports:  
+      - 5000:5000

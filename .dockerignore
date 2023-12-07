@@ -1,0 +1,3 @@
+node_modeules  *ignore node_modeules
+dummy.txt   //ignore specific file
+*.txt //ignore ectention specifi files 
